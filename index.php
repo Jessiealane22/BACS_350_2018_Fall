@@ -1,29 +1,23 @@
 <?php 
     require_once 'views.php';
-    $page_title = 'BACS 350 - Demo Server';
-    begin_page($page_title, 'Home');
+    require_once 'db.php';    
+    require_once 'log.php';
+    require_once 'files.php';
+    require_once 'Parsedown.php';
+    
+
+
+
+    // Convert the Markdown into HTML
+   
+    $content = 'HOME';
+    
+
+    // Create main part of page content
+    $settings = array(
+        "site_title" => "Exterior Brain",
+        "page_title" => "A smarter tool", 
+        "content"    => $content);
+
+    echo render_page($settings);
 ?>
-
-
-<h2>Website Project Solutions</h2>
-<ul>
-    <li>
-        <a href="http://seamansguide.com/guide/PhpApps/Index.md">Class Server</a>
-    </li>
-    <li>
-        <a href="http://seamansguide.com/guide/PhpApps/docs/Patterns.md">Design Patterns</a>
-    </li>
-    <li>
-        <a href="solution">Project Solutions</a>
-    </li>
-    <li>
-        <a href="project">My Projects</a>
-    </li>
-    <li>
-        <a href="templates">Code Templates</a>
-    </li>
-
-</ul>
-
-
-<?php end_page(); ?>
