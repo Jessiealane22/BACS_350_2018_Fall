@@ -1,23 +1,23 @@
 <?php
 
     require_once 'views.php';
-    require_once 'db.php';    
-    require_once 'log.php';
+//    require_once 'db.php';    
+//    require_once 'log.php';
     require_once 'files.php';
+
     require_once 'Parsedown.php';
     
 
+    // Markdown Text
+    $markdown = read_file('reviews.md');
+
+
     // Convert the Markdown into HTML
     $Parsedown = new Parsedown();
-    $markdown = read_file('brain.md');
-    $markdown = $Parsedown->text($markdown);
+    $content = $Parsedown->text($markdown);
     
-    // Display the page content
-    $content = render_button('Templates', '../../templates');
-    $content .= render_button('Solutions', '..');
-    $content .= render_button('Show Log', 'pagelog.php');
-    $content .= $markdown;
 
+//    $content = 'NONE';
 
     // Create main part of page content
     $settings = array(

@@ -64,7 +64,16 @@ pre {
 textarea {
     width: 80%;
     max-width: 600px;
+<<<<<<< HEAD
     height: 500px;
+=======
+    height: 400px;
+}
+
+td {
+/*    margin-right: 50px;*/
+    padding-right: 50px;
+>>>>>>> upstream/master
 }
 
 
