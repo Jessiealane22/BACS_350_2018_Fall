@@ -12,7 +12,7 @@ body {
 
 h1
 {
-    color: green;
+    color: black;
 }
 
 h2{
@@ -20,24 +20,24 @@ h2{
 }
 
 h3 {
-    color: green;
+    color: black;
 }
 
 header {
-    border: 6px solid yellow;
-    background-color: lightpink;
+    border: 6px solid black;
+    background-color: pink;
 /*    border-radius: 20px;*/
     padding: 40px;
 }
 
 header h1,
 header h2 {
-    color: white;
+    color: black;
 }
 
 
 header img {
-    border: 4px solid yellow;
+    border: 4px solid pink;
     box-shadow: none;
     border-radius: 20px;
     float: right;
@@ -58,7 +58,7 @@ pre {
     margin: 10px;
     padding: 10px;
     border: 1px solid #dddddd;
-    border-left: 4px solid green;
+    border-left: 4px solid Black;
 }
 
 textarea {
@@ -84,7 +84,7 @@ textarea {
 .card-header {
     background-color: #eeffee;
     border-bottom: 1px solid black;
-    color: green;
+    color: black;
     font-weight: 700;
     padding: 0px;
     margin: 0px;
